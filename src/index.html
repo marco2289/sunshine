@@ -6,11 +6,55 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link href="node_modules/froala-editor/css/froala_editor.pkgd.min.css" rel="stylesheet"
+  <link href="node_modules/froala-editor/css/froala_editor.pkgd.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/toastr.min.css">
+  <link rel="stylesheet" href="assets/css/mdb.min.css">
 
 </head>
 <body>
+
+
+
   <app-root></app-root>
+  <script src="assets/js/jquery.min.js" ></script>
+  <script src="assets/js/popper.min.js" ></script>
+  <script src="assets/js/bootstrap.min.js" ></script>
+<script src="assets/js/mdb.min.js" ></script>
+<script src="assets/js/toastr.min.js" ></script>
+
+
+<script>
+
+  function tost (){
+    toastr.success('Bienvenido a Sunshine Marco!','Registro exitoso', {
+             "positionClass": "toast-top-left",
+             "closeButton": true,
+             "timeOut": "2500"
+          } );
+  }
+
+  function guardarBlog(){
+    toastr.success('Blog guardado!','Registro exitoso', {
+             "positionClass": "toast-top-center",
+             "closeButton": true,
+             "timeOut": "2500"
+          } );
+  }
+
+  function errorBlog(){
+    toastr.error('No hay nada que borrar','Error', {
+             "positionClass": "toast-top-center",
+             "closeButton": true,
+             "timeOut": "2500"
+          } );
+  }
+
+
+  </script>
 
 </body>
 </html>
+
+
+

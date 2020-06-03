@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import 'froala-editor/js/plugins.pkgd.min.js';
 import 'froala-editor/js/plugins/align.min.js';
-import 'froala-editor/js/languages/de.js';
+import 'froala-editor/js/languages/es.js';
 import 'froala-editor/js/third_party/font_awesome.min';
 import 'froala-editor/js/third_party/image_tui.min';
 import 'froala-editor/js/third_party/spell_checker.min';
@@ -17,6 +17,8 @@ import { LoginComponent } from './login/login.component';
 import { PrincipalComponent } from './principal/principal.component';
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,7 @@ import { PrincipalComponent } from './principal/principal.component';
     HeaderComponent,
     LoginComponent,
     PrincipalComponent
-  ],
+    ],
   imports: [
     FroalaEditorModule.forRoot(),
     FroalaViewModule.forRoot(),

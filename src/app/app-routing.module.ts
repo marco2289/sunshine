@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CarruselComponent } from './carrusel/carrusel.component';
-import { LoginComponent } from "./login/login.component";
-import { PrincipalComponent } from "./principal/principal.component";
+import { LoginComponent } from './login/login.component';
+import { PrincipalComponent } from './principal/principal.component';
 
 
 const routes: Routes = [

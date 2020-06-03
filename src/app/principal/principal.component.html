@@ -1,23 +1,30 @@
 <div id="caja2">
+  <nav aria-label="breadcrumb " class=" ml-0" style="width: 250px;">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a href="#">Login</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Principal</li>
+    </ol>
+  </nav>
   <div class="container">
     <div class="row">
-      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-5" >
-        <h1 class="text-center text-white" style="font-size: 50px;">Bienvenido ciudadano promedio</h1>
-        <div id="editor2" [froalaEditor]="dataFroala"></div>
-
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-5">
+        <h1 class="text-center text-white animated bounceInDown" style="font-size: 50px;">Bienvenido Marco!</h1>
+        <div class="animated bounceInDown" id="editor2" [froalaEditor]="dataFroala"></div>
       </div>
-
     </div>
+
+    <button type="button" class="btn btn-lg btn-primary btn-lg animated bounce col-lg-3">Mi informacion</button>
+    <button type="button" class="btn btn-lg btn-secondary">Ver mi blog</button>
+    <button type="button" class="btn btn-lg btn-success" onclick="guardarBlog()">Guardar</button>
+    <button type="button" class="btn btn-lg btn-danger" onclick="errorBlog()">Borrar mi blog</button>
+    <button type="button" class="btn btn-lg btn-warning">Warning</button>
+    <button type="button" class="btn btn-lg btn-info">Info</button>
+    <button type="button" class="btn btn-lg btn-light">Light</button>
+    <button type="button" class="btn btn-lg btn-dark">Dark</button>
+
+
+
+
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-

@@ -10,7 +10,8 @@ export class PrincipalComponent implements OnInit {
 
   public dataFroala: object = {
     placeholderText: 'Aqui puedes escribir tu contenido!',
-    charCounterCount: false
+    charCounterCount: false,
+    language: 'es'
   };
 
 
