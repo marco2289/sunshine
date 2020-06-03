@@ -15,6 +15,7 @@ import { CarruselComponent } from './carrusel/carrusel.component';
 import { HeaderComponent } from './header/header.component';
 import { LoginComponent } from './login/login.component';
 import { PrincipalComponent } from './principal/principal.component';
+import { BlogComponent } from './blog/blog.component';
 
 
 
@@ -25,7 +26,8 @@ import { PrincipalComponent } from './principal/principal.component';
     CarruselComponent,
     HeaderComponent,
     LoginComponent,
-    PrincipalComponent
+    PrincipalComponent,
+    BlogComponent
     ],
   imports: [
     FroalaEditorModule.forRoot(),

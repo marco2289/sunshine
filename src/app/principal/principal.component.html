@@ -1,29 +1,29 @@
-<div id="caja2">
+<div id="caja2" class="container-fluid" >
   <nav aria-label="breadcrumb " class=" ml-0" style="width: 250px;">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="#">Home</a></li>
-      <li class="breadcrumb-item"><a href="#">Login</a></li>
+      <li class="breadcrumb-item"><a href="#" routerLink= "/login">Login</a></li>
       <li class="breadcrumb-item active" aria-current="page">Principal</li>
     </ol>
   </nav>
   <div class="container">
-    <div class="row">
+    <div class="row" >
       <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-5">
-        <h1 class="text-center text-white animated bounceInDown" style="font-size: 50px;">Bienvenido Marco!</h1>
+        <h1 class="text-center text-white animated bounceInDown" style="font-size: 50px;">Bienvenid<img class="mt-0"  style="width: 50px; margin-top: 0px;" src="../../assets/img/dom.png" alt=""> Marco!</h1>
         <div class="animated bounceInDown" id="editor2" [froalaEditor]="dataFroala"></div>
         <br>
       </div>
       <br>
       <h1 class="col-xl-12 text-white" style="margin-left: 100px;" >Panel principal</h1>
-      <button type="button" class="btn btn-primary" style="margin-left: 100px;" data-toggle="modal" data-target="#modalPush" >Notificaciones <span class="badge badge-danger">1</span></button>
-      <button type="button" class="btn btn-lg btn-info btn-lg col-lg-3" data-toggle="modal" data-target="#modalLoginAvatar" > <img class="w-25" src="../../assets/img/info.png" alt="">Mi informacion </button>
-      <button type="button" class="btn btn-lg peach-gradient">  <img class="" src="../../assets/img/ui.png" alt="" style="width: 50px;"> Ver mi blog</button>
-      <button type="button" class="btn btn-lg btn-success" onclick="guardarBlog()"> <img class="" src="../../assets/img/salvar.png" alt="" style="width: 50px;"> Guardar</button>
-      <button type="button" class="btn btn-lg btn-danger" style="margin-left: 100px;" onclick="errorBlog()"> <img class="" src="../../assets/img/basura.png" alt="" style="width: 50px;"> Borrar mi blog</button>
-      <button type="button" class="btn btn-lg btn-warning " data-toggle="modal" data-target="#modalSocial" > <img class="" src="../../assets/img/compartir.png" alt="" style="width: 50px;"> Compartir</button>
-      <button type="button" class="btn btn-lg purple-gradient"> <img class="" src="../../assets/img/error.png" alt="" style="width: 50px;">  Cerrar sesion</button>
-      <button type="button" class="btn btn-lg btn-light">Light</button>
-      <button type="button" class="btn btn-lg btn-dark">Dark</button>
+
+    <button type="button" class=" ml-0 mr-0 pl-0 pr-0 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 btn btn-lg btn-primary" data-toggle="modal" data-target="#modalPush" >Notificaciones <span class="badge badge-danger">1</span></button>
+      <button type="button" class=" ml-0 mr-0 pl-0 pr-0 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 btn btn-lg btn-info " data-toggle="modal" data-target="#modalLoginAvatar" > <img class="w-25" src="../../assets/img/info.png" alt="">Mi informacion </button>
+      <button type="button" class=" ml-0 mr-0 pl-0 pr-0 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 btn btn-lg peach-gradient" routerLink = "/blog" >  <img class="" src="../../assets/img/ui.png"  alt="" style="width: 50px;"> Ver mi blog</button>
+      <button type="button" class=" ml-0 mr-0 pl-0 pr-0 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 btn btn-lg btn-success" onclick="guardarBlog()"> <img class="" src="../../assets/img/salvar.png" alt="" style="width: 50px;"> Guardar</button>
+      <button type="button" class=" ml-0 mr-0 pl-0 pr-0 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 btn btn-lg btn-danger"  onclick="errorBlog()"> <img class="" src="../../assets/img/basura.png" alt="" style="width: 50px;"> Borrar mi blog</button>
+      <button type="button" class=" ml-0 mr-0 pl-0 pr-0 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 btn btn-lg btn-warning " data-toggle="modal" data-target="#modalSocial" > <img class="" src="../../assets/img/compartir.png" alt="" style="width: 50px;"> Compartir</button>
+      <button type="button" class=" ml-0 mr-0 pl-0 pr-0 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 btn btn-lg purple-gradient" routerLink= "/"> <img class="" src="../../assets/img/error.png" alt="" style="width: 50px;" >  Cerrar sesion</button>
+      <button type="button" class=" ml-0 mr-0 pl-0 pr-0 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 btn btn-lg btn-white" routerLink= "/"> <img class="" src="../../assets/img/github.png" alt="" style="width: 50px;" > Descargar</button>
     </div>
 
 
@@ -110,11 +110,6 @@
         <h6 class="">Las visitas a tu blog son 0</h6>
         <br>
         <h6 class="">Los comentarios en tu blog son 0</h6>
-
-        <div class="md-form ml-0 mr-0">
-          <input type="password" type="text" id="form29" class="form-control form-control-sm validate ml-0">
-          <label data-error="wrong" data-success="right" for="form29" class="ml-0">Enter password</label>
-        </div>
 
         <div class="text-center mt-4">
           <button class="btn btn-cyan mt-1" data-dismiss="modal" >Cerrar <i class="fas fa-sign-in ml-1"></i></button>
