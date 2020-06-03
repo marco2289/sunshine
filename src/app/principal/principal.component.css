@@ -14,6 +14,36 @@ background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, F
 
 }
 
-h1 {
+@font-face{
+  font-family:Fuente-loca;
+  src: url('../../assets/fonts/EuphoriaScript-Regular.ttf');
+}
+
+@font-face{
+ font-family:Fuente-linda;
+ src: url('../../assets/fonts/Spectral/Spectral-ExtraLightItalic.ttf') ;
+}
+
+@font-face{
+  font-family: Fuente-botones;
+  src: url('../../assets/fonts/manrope/Manrope/Manrope-VariableFont_wght.ttf ');
+}
+
+h1, h6, p {
   font-family:Fuente-p;
+}
+
+#nombre-info {
+  font-family: Fuente-loca;
+}
+
+.btn{
+  font-size: 15px;
+  font-family: Fuente-botones;
+}
+
+
+#sunshine{
+  font-family: Fuente-loca;
+  font-size: 50px;
 }

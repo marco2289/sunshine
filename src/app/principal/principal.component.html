@@ -11,20 +11,149 @@
       <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-5">
         <h1 class="text-center text-white animated bounceInDown" style="font-size: 50px;">Bienvenido Marco!</h1>
         <div class="animated bounceInDown" id="editor2" [froalaEditor]="dataFroala"></div>
+        <br>
       </div>
+      <br>
+      <h1 class="col-xl-12 text-white" style="margin-left: 100px;" >Panel principal</h1>
+      <button type="button" class="btn btn-primary" style="margin-left: 100px;" data-toggle="modal" data-target="#modalPush" >Notificaciones <span class="badge badge-danger">1</span></button>
+      <button type="button" class="btn btn-lg btn-info btn-lg col-lg-3" data-toggle="modal" data-target="#modalLoginAvatar" > <img class="w-25" src="../../assets/img/info.png" alt="">Mi informacion </button>
+      <button type="button" class="btn btn-lg peach-gradient">  <img class="" src="../../assets/img/ui.png" alt="" style="width: 50px;"> Ver mi blog</button>
+      <button type="button" class="btn btn-lg btn-success" onclick="guardarBlog()"> <img class="" src="../../assets/img/salvar.png" alt="" style="width: 50px;"> Guardar</button>
+      <button type="button" class="btn btn-lg btn-danger" style="margin-left: 100px;" onclick="errorBlog()"> <img class="" src="../../assets/img/basura.png" alt="" style="width: 50px;"> Borrar mi blog</button>
+      <button type="button" class="btn btn-lg btn-warning " data-toggle="modal" data-target="#modalSocial" > <img class="" src="../../assets/img/compartir.png" alt="" style="width: 50px;"> Compartir</button>
+      <button type="button" class="btn btn-lg purple-gradient"> <img class="" src="../../assets/img/error.png" alt="" style="width: 50px;">  Cerrar sesion</button>
+      <button type="button" class="btn btn-lg btn-light">Light</button>
+      <button type="button" class="btn btn-lg btn-dark">Dark</button>
     </div>
 
-    <button type="button" class="btn btn-lg btn-primary btn-lg animated bounce col-lg-3">Mi informacion</button>
-    <button type="button" class="btn btn-lg btn-secondary">Ver mi blog</button>
-    <button type="button" class="btn btn-lg btn-success" onclick="guardarBlog()">Guardar</button>
-    <button type="button" class="btn btn-lg btn-danger" onclick="errorBlog()">Borrar mi blog</button>
-    <button type="button" class="btn btn-lg btn-warning">Warning</button>
-    <button type="button" class="btn btn-lg btn-info">Info</button>
-    <button type="button" class="btn btn-lg btn-light">Light</button>
-    <button type="button" class="btn btn-lg btn-dark">Dark</button>
+
 
 
 
 
   </div>
 </div>
+
+
+
+
+
+<!--Modal: modalSocial-->
+<div class="modal fade" id="modalSocial" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog cascading-modal" role="document">
+
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Header-->
+      <div class="modal-header light-blue darken-3 white-text">
+        <h4 class="title"><i class="fas fa-users"></i> Compartelo con tus amigos</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+            aria-hidden="true">&times;</span></button>
+      </div>
+
+      <!--Body-->
+      <div class="modal-body mb-0 text-center">
+
+
+        <!--Facebook-->
+        <a type="button" class="btn btn-sm"><img class="w-25 rounded-circle img-responsive " src="../../assets/img/facebook.png"></a>
+        <!--Twitter-->
+        <a type="button" class="btn"><img class="w-25" src="../../assets/img/instagram.png"></a>
+        <!--Google +-->
+        <a type="button" class="btn"><img class="w-25" src="../../assets/img/twitter.png"></a>
+        <a type="button" class="btn"><img class="w-25" src="../../assets/img/whatsapp.png"></a>
+        <a type="button" class="btn text-dark">Copiar link <br><img class="w-25 text-dark" src="../../assets/img/enlazar.png"></a>
+
+
+      </div>
+
+    </div>
+    <!--/.Content-->
+
+  </div>
+</div>
+<!--Modal: modalSocial-->
+
+
+
+<!--
+   ___              ___  ___          _       _     _                 _                  _ _   _        ___             _              ______                             __
+  / / |             |  \/  |         | |     | |_  | |               (_)                (_) | | |      / _ \           | |             |  ___|                            \ \
+ / /| |______ ______| .  . | ___   __| | __ _| (_) | |     ___   __ _ _ _ __   __      ___| |_| |__   / /_\ \_   ____ _| |_ __ _ _ __  | |_ ___  _ __ _ __ ___ ______ _____\ \
+< < | |______|______| |\/| |/ _ \ / _` |/ _` | |   | |    / _ \ / _` | | '_ \  \ \ /\ / / | __| '_ \  |  _  \ \ / / _` | __/ _` | '__| |  _/ _ \| '__| '_ ` _ \______|______> >
+ \ \|_|             | |  | | (_) | (_| | (_| | |_  | |___| (_) | (_| | | | | |  \ V  V /| | |_| | | | | | | |\ V / (_| | || (_| | |    | || (_) | |  | | | | | |           / /
+  \_(_)             \_|  |_/\___/ \__,_|\__,_|_(_) \_____/\___/ \__, |_|_| |_|   \_/\_/ |_|\__|_| |_| \_| |_/ \_/ \__,_|\__\__,_|_|    \_| \___/|_|  |_| |_| |_|          /_/
+                                                                 __/ |
+                                                                |___/
+-->
+<div class="modal fade" id="modalLoginAvatar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog cascading-modal modal-avatar modal-md" role="document">
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Header-->
+      <div class="modal-header">
+        <img src="../../assets/img/hombre.png" alt="avatar" class="rounded-circle img-responsive">
+      </div>
+      <!--Body-->
+      <div class="modal-body  mb-1">
+
+        <h1 id="nombre-info" class="mt-1 mb-2 text-center ">Marco</h1>
+        <br>
+        <h6 class="">Tus correo es: marcomedina@gmail.com</h6>
+        <br>
+        <h6 class="">Las entradas de tu blog son 0</h6>
+        <br>
+        <h6 class="">Las visitas a tu blog son 0</h6>
+        <br>
+        <h6 class="">Los comentarios en tu blog son 0</h6>
+
+        <div class="md-form ml-0 mr-0">
+          <input type="password" type="text" id="form29" class="form-control form-control-sm validate ml-0">
+          <label data-error="wrong" data-success="right" for="form29" class="ml-0">Enter password</label>
+        </div>
+
+        <div class="text-center mt-4">
+          <button class="btn btn-cyan mt-1" data-dismiss="modal" >Cerrar <i class="fas fa-sign-in ml-1"></i></button>
+        </div>
+      </div>
+
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+
+
+
+<!--Modal: modalPush-->
+<div class="modal fade" id="modalPush" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-notify modal-info" role="document">
+    <!--Content-->
+    <div class="modal-content text-center">
+      <!--Header-->
+      <div class="modal-header d-flex justify-content-center">
+        <p class="heading">Notificaciones</p>
+      </div>
+
+      <!--Body-->
+      <div class="modal-body">
+
+        <i class="fas fa-bell fa-4x animated rotateIn mb-4"></i>
+
+        <p>Bienvenido a <label id="sunshine" for="">Sunshine</label> <br>Esperamos que te sientas agusto con nuestro servicio asi como para nosotros es un placer tenerte aqui.</p>
+
+      </div>
+
+      <!--Footer-->
+      <div class="modal-footer flex-center">
+        <a type="button" class="btn btn-outline-info waves-effect" data-dismiss="modal">Cerrar</a>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!--Modal: modalPush-->
