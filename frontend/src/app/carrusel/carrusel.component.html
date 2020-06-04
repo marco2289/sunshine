@@ -1,0 +1,131 @@
+<div id="carouselExampleCaptions" class="carousel slide " data-ride="carousel" data-interval="false">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" data-interval="false" style="width:100%; height: 1008px;">
+    <div class="carousel-item active" data-interval="false">
+      <img src="../../assets/img/4.jpg" class="d-block mh-100" alt="..." style="position: relative;">
+      <div class="carousel-caption  d-none d-block" style="margin-bottom: 350px;">
+                <h1 id="titulo" class="display-1" style="font-size:200px;">Sunshine<img class="mt-0"  style="width: 50px; margin-top: 0px;" src="../../assets/img/dom.png" alt=""></h1>
+
+
+        <div class="">
+          <h2 class="">Comencemos</h2>
+          <button class="btn btn-primary btn-lg mr-3" routerLink='/login' id="boton1" >Iniciar Sesion</button>
+          <button class="btn btn-secondary btn-lg" id="boton2" data-toggle="modal" data-target="#modalRegisterForm" >Registrarte</button>
+          <br>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item" data-interval="false">
+      <img src="../../assets/img/33.jpg" class="d-block" alt="...">
+      <div class="carousel-caption d-none d-md-block" style="margin-bottom: 50px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4">
+              <div class="card" style="width: 18rem;">
+                <img src="../../assets/img/33.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text text-dark">Puedes crear blogs acerca de tus viajes y compartir tus experiencia</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4">
+              <div class="card" style="width: 18rem;">
+                <img src="../../assets/img/7.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text text-dark">Si te gusta la fotografia y quieres mostrar tu arte de una forma diferente estas en el lugar indicado.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4">
+              <div class="card" style="width: 18rem;">
+                <img src="../../assets/img/22.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text text-dark">Si eres un amante de la poseia o de las reflexiones, compartelas con tus amigos.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 mt-5 mb-5 ">
+              <div class="card" style="width: 18rem;">
+                <img src="../../assets/img/alta.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text text-dark">Seamos sinceros, a todos nos gustan las peliculas y tambien hablar sobre ellas.</p>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item" data-interval="false">
+      <img src="../../assets/img/sun.jpg" class="d-block mh-100" alt="..." style="position: relative;">
+      <div class="carousel-caption  d-none d-block" style="margin-bottom: 370px;">
+        <h1 id="titulo" class="display-1" style="font-size:150px;">Te hemos convencido?</h1>
+        <div class="">
+          <h2 class="">Prueba sunshine</h2>
+          <button class="btn btn-primary btn-lg mr-3" routerLink='/login' id="boton1" >Iniciar Sesion</button>
+          <button class="btn btn-secondary btn-lg" id="boton2" data-toggle="modal" data-target="#modalRegisterForm" >Registrarte</button>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+
+<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 ">Registro de usuario</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <i class="fas fa-user prefix grey-text"></i>
+          <input type="text" id="orangeForm-name" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="orangeForm-name">Nombre</label>
+        </div>
+        <div class="md-form mb-5">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <input type="email" id="orangeForm-email" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="orangeForm-email">Correo</label>
+        </div>
+
+        <div class="md-form mb-4">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <input type="password" id="orangeForm-pass" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="orangeForm-pass">Contraseña</label>
+        </div>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-success" onclick="tost()">Registrarse</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
